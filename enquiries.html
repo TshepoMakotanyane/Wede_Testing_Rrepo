@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPC Repairs | Booking & Enquiries</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LPC Repairs</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html" class="active">Enquiries</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Request a Quote / Book a Repair</h1>
+            <p>Fill in your device details below and our team will respond with an estimate.</p>
+        </section>
+
+        <section class="form-container">
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    
+                    <label for="full-name">Full Name:*</label>
+                    <input type="text" id="full-name" name="full_name" required placeholder="John Doe">
+
+                    <label for="email">Email Address:*</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+                    <label for="phone">Phone / WhatsApp Number:*</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="082 123 4567">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Device Details</legend>
+
+                    <label for="device-type">Device Category:*</label>
+                    <select id="device-type" name="device_type" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="phone">Phone</option>
+                        <option value="console">Console</option>
+                    </select>
+
+                    <label for="brand-model">Brand & Model:*</label>
+                    <input type="text" id="brand-model" name="brand_model" required placeholder="e.g. PlayStation 5, iPhone 13, Dell XPS 15">
+
+                    <label for="issue-description">Describe the Fault / Issue:*</label>
+                    <textarea id="issue-description" name="issue_description" rows="5" required placeholder="Please describe the issue (e.g., Cracked screen, HDMI port loose, battery draining quickly)"></textarea>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Submit Enquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LPC Repairs. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
